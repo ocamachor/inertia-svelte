@@ -118,19 +118,20 @@ php artisan inertia:middleware
 ~~~
 
 Es importante que lo agregue de úlimo en el "**middlewareGroups.web**".
-Ya tenemos listo el Side-Server.
+
+Listo, Ya tenemos el Side-Server.
+
+Ahora instalemos el lado del cliente (*Client-Side Setup*).
 
 ## Inertia js Client Side
 
-Ahora instalemeos el lado del cliente (Cliente-Side Setup).
-
-- para ello ingresamos la siguiente instrucción en la consola:
+- para ello ingresamos la siguiente instrucción en la terminal:
   
 ~~~shell
 npm install @inertiajs/svelte
 ~~~
 
-- A continuación, actualice su archivo JavaScript principal para iniciar su aplicación Inertia. Para lograr esto, inicializaremos el marco del lado del cliente con el componente base Inertia. El archivo lo encuentra en la ruta: **"resources/js/app.js"** y pegue allí la siguiente plantilla:
+- A continuación, vamos a actualizar el archivo JavaScript principal para iniciar la aplicación con Inertia. Para lograr esto, inicializaremos el marco del lado del cliente con el componente base Inertia. asi que vamos a abrir el archivo que se encuentra en la ruta: **"resources/js/app.js"** y pegue allí la siguiente plantilla:
 
 ~~~php
 import './bootstrap';
@@ -158,7 +159,7 @@ Ya casi terminamos; ahora nos faltaría instalar el plugin **@sveltejs/vite-plug
 npm install --save-dev @sveltejs/vite-plugin-svelte
 ~~~
 
-- luego importelo y agreguelo al archivo de configuración de **vite**, éste archivo debe verlo en la raiz del proyecto con el nombre **"vite.config.js"** y debe verse así:
+- Ahora vamos a importarlo y agregarlo en el archivo de configuración de **vite**, éste archivo debe verlo en la raiz del proyecto con el nombre **"vite.config.js"** y debe verse así: 
 
 ~~~js
 //vite.config.js
@@ -180,10 +181,12 @@ export default defineConfig({
 });
 ~~~
 
-- Por ultimo vamos a crear nuestro primer componente Svelte para testear la instalación. Para ello vamos a la carpeta **"resources/js"** y dentro de ella creamos una carpeta **"pages"** y dentro pages creamos el componente: **"Home.svelte"**.
-- Hecho lo anterior, el componente debe verse en la ruta: ***resources/js/pages/Home.svelte***
+***(Para evitar errores de digitación, copie y pegue (reemplace) la plantilla completa)***
 
-- ahora dentro del archivo svelte usemos la siguiente plantilla:
+- Por ultimo vamos a crear nuestro primer componente Svelte para testear la instalación. Para ello vamos a la carpeta **"resources/js"** y dentro de ella creamos una carpeta **"pages"** y dentro de **pages** creamos el componente: **"Home.svelte"**.
+- Hecho lo anterior, el componente debe verse en la ruta de la siguiente manera: ***resources/js/pages/Home.svelte***
+
+- ahora dentro del archivo **Home.svelte** copia y pega la siguiente plantilla:
 
 ~~~js
 //Home.svelte
@@ -195,7 +198,7 @@ export default defineConfig({
 <h1>{saludo}</h1>
 ~~~
 
-- vamos a probar nuestra aplicación y para ello arrancamos nuestro servidor de cliente ingresando en la terminal:
+- Ok, vamos a probar nuestra aplicación y para ello arrancamos nuestro servidor de cliente ingresando en la terminal:
 
 ~~~shell
 npm run dev
@@ -211,13 +214,13 @@ ___
 ***y Voilà !***
 ___
 
-Deberías ver nuestro Saludo de prueba:
+Deberías ver nuestro Saludo de prueba en el servidor:
 **'Hola desde Inertia con Laravel y Svelte'**
 
 - y asi tenemos a Laravel 10 disponible para backend,
 - y Svelte para el frontend juntos como un proyecto monolitico.
 
-Adicionalmente, si deseas usar Tailwind, puedes seguir el [manual de instalación de la pagina oficial de Tailwind para Laravel](https://tailwindcss.com/docs/guides/laravel), funciona a la perfección.
+Adicionalmente, si deseas usar **Tailwind**, puedes seguir el [manual de instalación de la pagina oficial de Tailwind para Laravel](https://tailwindcss.com/docs/guides/laravel), funciona a la perfección.
 
 Saludos y Espero te sea de utilidad.
 
