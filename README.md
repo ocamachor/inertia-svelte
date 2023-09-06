@@ -1,9 +1,10 @@
 # Laravel / Inertia con Svelte
 
-Este repositorio tiene El andamio con Larvel, Inertiajs y Svelte para que lo puedas usar, sin embargo, si deseas conocer y realizar la instalación manual, aqui te dejo toda la guía.
+Este repositorio tiene El andamio con Larvel, Inertiajs y Svelte para que lo puedas usar, sin embargo, si desea conocer y realizar la instalación manual, aqui dejo toda la guía.
 
-Recuerda que debes tener instalado previamente **"composer"**. Hay  muchos tutoriales disponibles para ello.
-Crea una carpeta en cualquier lugar de windows.
+Recuerde que debe tener instalado previamente **"composer"**. Hay  muchos tutoriales disponibles para ello.
+
+vamos a crear una carpeta en cualquier lugar de windows para hacer allí la instalación .
 
 ## Pasos de instalacion Laravel / inertia / svelte
 
@@ -16,22 +17,29 @@ Crea una carpeta en cualquier lugar de windows.
 composer create-project laravel/laravel [nombre-app]
 ~~~
 
-Esto deberia instalar Laravel sin novedades, eso toma unos segundos o minutos dependiendo de las caracateristicas de tu máquina.
+Esto deberia instalar Laravel sin novedades, eso toma unos segundos o minutos dependiendo de las caracateristicas de su máquina.
 Despues de la instalación, Ingrese a la carpeta del proyecto y luego suba el servidor de la siguiente manera:
 
+- para ingresar a la carpeta del proyecto
+  
 ~~~shell
 cd nombre-app
+~~~
+
+- para subir el server
+
+~~~shell
 php artisan serve
 ~~~
 
 ahora abre el link en un browser.  Suele ser: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 y listo, ya tenemos Laravel instalado que es nuestra instalación base.
 
-## Inertia js - Server Side
-
 Ahora pasamos a instalar **Inertia Js** que hará las veces de "interface" entre ***laravel*** y ***Svelte***.
 
-- Debe asegurarse de estar dentro de la carpeta del proyecto y luego desde allí instalar el lado del servidor *(Server-Side Setup)* con la siguiente instrucción en la Terminal:
+## Inertia js - Server Side
+
+- Debe asegurarse de estar dentro de la carpeta del proyecto y luego desde allí instalar el marco del lado del servidor *(Server-Side Setup)* con la siguiente instrucción en la Terminal:
 
 ~~~php
 composer require inertiajs/inertia-laravel
