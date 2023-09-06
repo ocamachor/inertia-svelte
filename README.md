@@ -1,6 +1,6 @@
 # Laravel / Inertia con Svelte
 
-Este repositorio tiene El andamio con Larvel, Inertiajs y Svelte para que lo puedas usar, sin embargo, si desea conocer y realizar la instalación manual, aqui dejo toda la guía.
+Este repositorio tiene El andamio con Laravel, Inertiajs y Svelte para que pueda usarlo; sin embargo, si desea conocer y realizar la instalación manual, aqui dejo toda la guía.
 
 Recuerde que debe tener instalado previamente **"composer"**. Hay  muchos tutoriales disponibles para ello.
 
